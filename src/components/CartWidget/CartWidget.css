@@ -1,0 +1,48 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7e7e7e; /* Color de fondo */
+    padding: 10px 20px;
+  }
+  
+  .brand {
+    font-size: 24px;
+    color: #b3e283;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #b3e283; /* Color de los enlaces */
+    font-size: 18px;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Ajusta este valor para aumentar o disminuir la distancia */
+  }
+  
+  .button {
+    background-color: #ffffff; /* Fondo blanco */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #7e7e7e; /* Color del texto */
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #e0e0e0; /* Fondo más oscuro al hacer hover */
+  }
+  
