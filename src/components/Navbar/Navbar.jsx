@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as Anchor } from 'react-router-dom';
 import './NavBar.css';
 import CartWidget from '../CartWidget/CartWidget';
 
@@ -7,13 +8,13 @@ const NavBar = () => {
     <nav className="navbar">
       <div className="brand">Compras Zone</div>
       <ul className="nav-links">
-        <li><a href="#" className="button">Inicio</a></li>
-        <li><a href="#">Vehículos</a></li>
-        <li><a href="#">Electrónica</a></li>
-        <li><a href="#">Libros</a></li>
+        <li><Anchor to="/" className="button">Inicio</Anchor></li>
+        <li><Anchor to="/category/cars">Vehículos</Anchor></li>
+        <li><Anchor to="/category/electronics">Electrónica</Anchor></li>
+        <li><Anchor to="/category/books">Libros</Anchor></li>
       </ul>
       <div className="navbar-right">
-        <a href="#" className="button">Login</a>
+        <Anchor to="/login" className="button">Login</Anchor>
         <CartWidget />
       </div>
     </nav>

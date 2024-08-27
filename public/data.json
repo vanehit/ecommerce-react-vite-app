@@ -1,0 +1,56 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "price": 10.99,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg/800px-The_Great_Gatsby_Cover_1925_Retouched.jpg",
+      "description": "A novel set in the Jazz Age that critiques the American Dream."
+    },
+    {
+      "id": 2,
+      "title": "1984",
+      "author": "George Orwell",
+      "price": 8.99,
+      "img": "https://images.cdn2.buscalibre.com/fit-in/360x360/85/64/8564963be6e21ee55d0bd7b532c3a9bb.jpg",
+      "description": "A dystopian novel that explores the dangers of totalitarianism."
+    }
+  ],
+  "cars": [
+    {
+      "id": 3,
+      "make": "Toyota",
+      "model": "Camry",
+      "price": 24425,
+      "img": "https://image.cdn2.seaart.ai/2023-10-24/20799671628749829/7f0d23137aff4dadc801785b8b62d5139239fc21_high.webp",
+      "description": "A reliable midsize sedan with excellent fuel economy."
+    },
+    {
+      "id": 4,
+      "make": "Tesla",
+      "model": "Model 3",
+      "price": 39990,
+      "img": "https://i.etsystatic.com/20820598/r/il/b67fd1/5618579876/il_794xN.5618579876_1one.jpg",
+      "description": "An electric car with impressive range and high performance."
+    }
+  ],
+  "electronics": [
+    {
+      "id": 5,
+      "name": "Smartphone XYZ",
+      "brand": "TechBrand",
+      "price": 699.99,
+      "img": "https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/e1da98d9-d89e-4dda-a2ad-7bcc30058948/a314e6e9-23f0-4768-ae52-38c8d3709815.png",
+      "description": "A high-end smartphone with a 6.7-inch display and 128GB storage."
+    },
+    {
+      "id": 6,
+      "name": "4K Ultra HD TV",
+      "brand": "VisionTech",
+      "price": 499.99,
+      "img": "https://visiontech.co.ke/wp-content/uploads/2024/07/TCL-55-inch-QLED-SMART-TV-55C645.jpg",
+      "description": "A 55-inch 4K Ultra HD television with smart features."
+    }
+  ]
+}

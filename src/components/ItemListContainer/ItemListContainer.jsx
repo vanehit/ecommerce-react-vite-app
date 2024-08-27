@@ -1,18 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import ItemList from '../ItemList/ItemList';
 import './ItemListContainer.css';
-import ItemCount from '../ItemCount/ItemCount';
 
-const ItemListContainer = ({ greeting }) => {
-    const handleAdd = (quantity) => {
-        console.log(`Cantidad agregada: ${quantity}`);
-      };
+const ItemListContainer = ({ greeting, category }) => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch('/data.json');
+        const data = await response.json();
+        if (data[category]) {
+          setProducts(data[category]);
+        } else {
+          console.error(`No data found for category: ${category}`);
+        }
+      } catch (error) {
+        console.error('Error fetching products:', error);
+      }
+    };
+
+    fetchProducts();
+  }, [category]);
 
   return (
     <div className="item-list-container">
       <h1>{greeting}</h1>
-      <ItemCount stock={20} initial={1} onAdd={handleAdd} />
+      <ItemList products={products} />
     </div>
   );
-}
+};
 
 export default ItemListContainer;
