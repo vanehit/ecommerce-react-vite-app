@@ -13,10 +13,8 @@ function App() {
         <Route path="/" element={<ItemListContainer greeting="Bienvenidos a Compras Zone!" />} />
         
         {/* Página de categoría, muestra ítems por tipo */}
-        <Route path="/category/books" element={<ItemListContainer greeting="Libros" category="books" />} />
-        <Route path="/category/cars" element={<ItemListContainer greeting="Autos" category="cars" />} />
-        <Route path="/category/electronics" element={<ItemListContainer greeting="Electrónica" category="electronics" />} />
-        
+        <Route path="/category/:categoryName" element={<ItemListContainer />} />
+
         {/* Página de detalles, muestra un ítem específico */}
         <Route path="/item/:id" element={<ItemDetailContainer />} />
       </Routes>
