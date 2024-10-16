@@ -10,7 +10,7 @@ const ItemListContainer = ({ greeting }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('/data.json');
+        const response = await fetch('/data.json');//cambiamos el endpoint
         const data = await response.json();
         
         if (categoryName) {
