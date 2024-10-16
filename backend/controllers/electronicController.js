@@ -19,4 +19,4 @@ export const getElectronics = async (req, res) => {
   }
 };
 
-// Incluye más funciones según tus necesidades
+

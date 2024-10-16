@@ -19,4 +19,4 @@ export const getCars = async (req, res) => {
   }
 };
 
-// Agrega funciones adicionales según sea necesario
+

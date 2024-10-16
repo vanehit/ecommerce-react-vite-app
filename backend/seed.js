@@ -11,15 +11,15 @@ dotenv.config();
 const seedItems = async () => {
   await connectDB();
 
-  // Limpia las colecciones antes de agregar nuevos productos
+  // Limpiamos las colecciones antes de agregar nuevos productos
   await bookModel.deleteMany();
-  await carModel.deleteMany(); // Limpia la colección de cars
-  await electronicModel.deleteMany(); // Limpia la colección de electronics
+  await carModel.deleteMany(); 
+  await electronicModel.deleteMany(); 
 
   // Lee los datos desde data.json
   const data = JSON.parse(fs.readFileSync('../public/data.json', 'utf8'));
 
-  // Inserta los libros
+  // Insertamos los libros
   const books = data.books.map(book => ({
     title: book.title,
     author: book.author,
@@ -32,7 +32,7 @@ const seedItems = async () => {
   await bookModel.insertMany(books);
   console.log('Libros cargados exitosamente');
 
-  // Inserta los autos
+  // Insertamos los autos
   const cars = data.cars.map(car => ({
     make: car.make,
     model: car.model,
@@ -45,9 +45,9 @@ const seedItems = async () => {
   await carModel.insertMany(cars);
   console.log('Autos cargados exitosamente');
 
-  // Inserta los electrónicos
+  // Insertamos los electrónicos
   const electronics = data.electronics.map(electronic => ({
-    name: electronic.name, // Cambia 'name' a 'title' si lo prefieres
+    name: electronic.name, 
     brand: electronic.brand,
     price: electronic.price,
     stock: electronic.stock,
@@ -58,7 +58,7 @@ const seedItems = async () => {
   await electronicModel.insertMany(electronics);
   console.log('Electrónicos cargados exitosamente');
 
-  // Cierra la conexión
+  // cerramos la conexión
   mongoose.connection.close();
 };
 

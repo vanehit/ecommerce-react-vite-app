@@ -36,7 +36,7 @@ router.get('/item/:id', async (req, res) => {
 
 // Creamos un nuevo ítem
 router.post('/', async (req, res) => {
-  const newItem = new bookModel(req.body); // Asegúrate de que req.body contenga todos los campos necesarios
+  const newItem = new bookModel(req.body); 
   try {
     const savedItem = await newItem.save();
     res.status(201).json(savedItem);
