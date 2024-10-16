@@ -3,6 +3,8 @@ import { Link as Anchor } from 'react-router-dom';
 import './NavBar.css';
 import CartWidget from '../CartWidget/CartWidget';
 
+
+
 const NavBar = () => {
   return (
     <nav className="navbar">

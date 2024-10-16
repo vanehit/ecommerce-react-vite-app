@@ -1,7 +1,7 @@
 // Item.js
 import React from 'react';
 import { Link as Anchor } from 'react-router-dom';
-import './Item.css'; // Verifica esta ruta
+import './Item.css'; 
 
 const Item = ({ product }) => {
   return (

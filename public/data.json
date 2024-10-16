@@ -5,6 +5,7 @@
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "price": 10.99,
+      "stock": 5,
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg/800px-The_Great_Gatsby_Cover_1925_Retouched.jpg",
       "description": "A novel set in the Jazz Age that critiques the American Dream."
     },
@@ -13,8 +14,27 @@
       "title": "1984",
       "author": "George Orwell",
       "price": 8.99,
+      "stock": 3,
       "img": "https://images.cdn2.buscalibre.com/fit-in/360x360/85/64/8564963be6e21ee55d0bd7b532c3a9bb.jpg",
       "description": "A dystopian novel that explores the dangers of totalitarianism."
+    },
+    {
+      "id": 3,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "price": 12.99,
+      "stock": 4,
+      "img": "https://sbslibreria.vtexassets.com/arquivos/ids/289184-1600-auto?v=637756273171100000&width=1600&height=auto&aspect=true",
+      "description": "A novel about the serious issues of rape and racial inequality."
+    },
+    {
+      "id": 4,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "price": 9.99,
+      "stock": 6,
+      "img": "https://cdn.kobo.com/book-images/b92c31a2-6731-436c-b532-5a3207fec2b6/353/569/90/False/pride-and-prejudice-the-original-1813-edition-a-jane-austen-classic-novel.jpg",
+      "description": "A romantic novel that charts the emotional development of the protagonist."
     }
   ],
   "cars": [
@@ -23,6 +43,7 @@
       "make": "Toyota",
       "model": "Camry",
       "price": 24425,
+      "stock": 2,
       "img": "https://image.cdn2.seaart.ai/2023-10-24/20799671628749829/7f0d23137aff4dadc801785b8b62d5139239fc21_high.webp",
       "description": "A reliable midsize sedan with excellent fuel economy."
     },
@@ -31,26 +52,65 @@
       "make": "Tesla",
       "model": "Model 3",
       "price": 39990,
+      "stock": 3,
       "img": "https://i.etsystatic.com/20820598/r/il/b67fd1/5618579876/il_794xN.5618579876_1one.jpg",
       "description": "An electric car with impressive range and high performance."
+    },
+    {
+      "id": 5,
+      "make": "Ford",
+      "model": "Mustang",
+      "price": 55000,
+      "stock": 1,
+      "img": "https://media.istockphoto.com/id/459261909/es/foto/ford-mustang.jpg?s=1024x1024&w=is&k=20&c=FW50RSQ_s9oN3zXKbSNRMsByIp7pMgMwT7jP5QbpE4g=",
+      "description": "A classic American muscle car with powerful performance."
+    },
+    {
+      "id": 6,
+      "make": "Honda",
+      "model": "Civic",
+      "price": 22000,
+      "stock": 4,
+      "img": "https://www.clarin.com/img/2016/12/02/rJy11gU7l_1256x620.jpg",
+      "description": "A compact car known for its reliability and fuel efficiency."
     }
   ],
   "electronics": [
     {
-      "id": 5,
+      "id": 7,
       "name": "Smartphone XYZ",
       "brand": "TechBrand",
       "price": 699.99,
+      "stock": 10,
       "img": "https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/e1da98d9-d89e-4dda-a2ad-7bcc30058948/a314e6e9-23f0-4768-ae52-38c8d3709815.png",
       "description": "A high-end smartphone with a 6.7-inch display and 128GB storage."
     },
     {
-      "id": 6,
+      "id": 8,
       "name": "4K Ultra HD TV",
       "brand": "VisionTech",
       "price": 499.99,
+      "stock": 5,
       "img": "https://visiontech.co.ke/wp-content/uploads/2024/07/TCL-55-inch-QLED-SMART-TV-55C645.jpg",
       "description": "A 55-inch 4K Ultra HD television with smart features."
+    },
+    {
+      "id": 9,
+      "name": "Laptop Pro 15",
+      "brand": "LaptopBrand",
+      "price": 1299.99,
+      "stock": 2,
+      "img": "https://c1.neweggimages.com/ProductImageCompressAll1280/34-236-054-V06.jpg",
+      "description": "A high-performance laptop suitable for professionals."
+    },
+    {
+      "id": 10,
+      "name": "Wireless Headphones",
+      "brand": "AudioBrand",
+      "price": 199.99,
+      "stock": 8,
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQTQ3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1687660671363",
+      "description": "Noise-cancelling wireless headphones with high-quality sound."
     }
   ]
 }
