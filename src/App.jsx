@@ -17,10 +17,11 @@ function App() {
           <Route path="/" element={<ItemListContainer greeting="Bienvenidos a Compras Zone!" />} />
           
           {/* Página de categoría, muestra ítems por tipo */}
-          <Route path="/category/:categoryName" element={<ItemListContainer />} />
+          <Route path="/category/:categoryName" element={<ItemListContainer greeting="¡Explora nuestros productos!" />} />
 
           {/* Página de detalles, muestra un ítem específico */}
           <Route path="/item/:id" element={<ItemDetailContainer />} />
+
           {/* Ruta del carrito */}
           <Route path="/cart" element={<Cart />} /> 
         </Routes>
